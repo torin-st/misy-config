@@ -1,3 +1,10 @@
+zuul:
+  prefix: /api
+  ignoredServices: '*'
+  routes:
+    departments-service: /department/**
+    api-gateway: /gateway/**
+    
 server:
   port: 8080
   compression:
